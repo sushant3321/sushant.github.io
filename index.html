@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DROPDOWN
+	</title>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="2">
+	<meta name="viewport" type="width-divice-width" initial-scale="1.0">
+	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+
+	<style>
+		body{padding: 0;
+			margin: 0;
+			/*background-color:cyan;*/
+		font-family: 'Mansalva', cursive;
+		background-image: url(674925.png);
+		height: 100vh;
+		
+		background-size: cover;}
+
+		.DROPDOWN{width: 80%;
+			height: 100px;
+			margin: 0px auto;
+
+		}
+		.DROPDOWN ul{
+			padding: 0;
+
+
+		}
+
+		.DROPDOWN ul li{
+			float: left;
+			background-color: yellow;
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 20px;
+			text-align: center;
+			list-style: none;
+			opacity: 0.7;
+			transition: all 0.6s;
+
+
+		}
+		.DROPDOWN ul li ul{
+			display: none;
+		}
+		.DROPDOWN ul li:hover >ul{
+			display: block;
+		}
+
+		.DROPDOWN ul li:before{
+			background-color: red;
+			width: 200px;
+			height: 100px;
+		}
+
+		/*.DROPDOWN ul li:hover{*/
+			/*background-color:red;*/
+			/*opacity: 0.9;*/
+		}
+		.DROPDOWN ul li ul li{
+			position: relative;
+		}
+
+		.DROPDOWN ul li ul li ul{
+			position: absolute;
+			left: 200px;
+			top: 0px;
+		}
+
+
+	</style>
+</head>
+	<body>
+		<div class="DROPDOWN">
+			<ul>
+				<li>India
+					<ul>
+						<li>
+							Dehli
+						</li>
+						<li>
+							Mumbai
+						</li><li>
+							Ranchi
+							<ul>
+								<li>piska more</li>
+								<li>main road</li>
+							</ul>
+						</li>
+					</ul>
+
+				</li>
+				<li>London
+					<ul>
+						<li>Bradford</li>
+						<li>Birmingham</li>
+						<li>Cambridge</li>
+
+					</ul>
+
+				</li>
+				<li>America
+					<ul>
+						<li>new york</li>
+						<li>maxico</li>
+						<li>califonia</li>
+					</ul>
+				</li>
+				<li>Brazil</li>
+			</ul>
+		</div>
+
+
+
+	
+</body>
+</html>
